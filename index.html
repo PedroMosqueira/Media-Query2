@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu responsivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mq.css">
+    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    
+</head>
+
+
+<body onresize="tamanho()">
+    <header>
+    <h1>Meu Site</h1>
+    <i class="fi fi-bs-menu-burger" id='bt'onclick= lista()></i>
+    <menu id="menug">
+        <ul>
+             <li><a href="#">Opção 1 </a></li>
+             <li><a href="#">Opção 2 </a></li>
+             <li><a href="#">Opção 3 </a></li>
+            <li><a href="#">Opção 4 </a></li>
+             <li><a href="#">Opção 5 </a></li>
+        </ul>
+    </menu>
+    
+    
+    </header>
+
+    <main>
+        <h2>Testando Media Queries</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consectetur rem numquam tempore mollitia modi velit, explicabo inventore laboriosam. Quia quo voluptas dolorem similique incidunt, culpa consequatur voluptates veniam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ea eos dicta velit consequatur, maiores laborum qui nemo sint harum soluta veritatis, consectetur quaerat ut quidem cupiditate ipsa iure? Maiores. </p>
+        <p>
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptates vero ratione, laborum natus ipsa mollitia totam molestias in quo. Aperiam cum voluptas laborum repellat aut similique praesentium illum quo?
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam minima autem quos nulla impedit provident ipsum reiciendis, quam voluptas, non voluptatem possimus tempora illo vero eligendi, soluta sed laborum? Voluptas. 
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem nemo corporis incidunt dolore ipsum perspiciatis voluptatem recusandae molestias et. Doloribus minima similique porro aspernatur, quaerat rerum. Quas, rerum laudantium?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nam rerum corporis assumenda labore culpa distinctio reprehenderit delectus nemo ipsam voluptate mollitia porro unde, quibusdam voluptas. Excepturi aliquam aut temporibus.
+        </p>
+
+
+
+    </main>
+    
+    
+</body>
+</html>
+<script>
+   
+    function lista() {
+       if(menug.style.display=='none'){
+        menug.style.display='block'
+       }else{
+        menug.style.display='none'
+       }
+       
+    
+    
+    }
+    function tamanho(){
+        if(window.innerWidth>=600){
+            menug.style.display='block'
+
+        }else{
+            menug.style.display='none'
+
+        }
+
+    }
+
+
+</script>
